@@ -61,7 +61,7 @@ const Cart = ({ cart, setCart, isLoggedIn }) => {
       {cart?.length === 0 ? (
         <p>Your cart is empty</p>
       ) : (
-        cart.map((item, index) => (
+        cart?.map((item, index) => (
           <div key={index} className='cart-item'>
             <h3 className='item-name'>{item.name}</h3>
             <img className='item-image' src={item.imageUrl} alt={item.name} />

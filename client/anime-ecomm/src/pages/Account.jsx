@@ -8,7 +8,7 @@ import { Button } from "react-bootstrap";
 import Form from "react-bootstrap/Form";
 import Modal from "react-bootstrap/Modal";
 
-const Account = ({ token, id }) => {
+const Account = ({ token }) => {
   const [user, setUser] = useState([]);
   const { id } = useParams();
   // anythign else to add?
